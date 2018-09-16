@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>blackjack</title>
-    <link rel="stylesheet" href="/screen.css">
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
-  </body>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="/screen.css">
+</head>
+
+<body>
+  <main class="play-area">
+    <h1>Dealer Hand</h1>
+    <h2 class="dealer-score"></h2>
+    <div class='dealer-hand'>
+      <img class="back" src="./images/gray_back.jpg" />
+    </div>
+
+    <h3 class="win-lose"></h3>
+
+    <h1>Player Hand</h1>
+    <h2 class=player-score></h2>
+    <div class='player-hand'></div>
+  </main>
+  <footer class="buttons">
+    <button class="hits">HIT</button>
+    <button class="stays">STAY</button>
+  </footer>
+  <button class='new-game'>New Game</button>
+  <script src="/main.js" charset="utf-8"></script>
+</body>
+
 </html>

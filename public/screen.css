@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Allan");
 html {
   height: 100%;
 }
@@ -5,5 +6,80 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  font: 16px / 1 sans-serif;
+  background-image: url(./images/background.jpg);
+  font: 20px / 1 Allan;
+  text-shadow: -1px 0 black, 0 1px black, 0 1px black, -1px 0 black;
+  color: white;
+}
+:root {
+  --aspect-ratio: 1056px/691;
+}
+.dealer-hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dealer-hand img {
+  width: 150px;
+  height: calc(var(--aspect-ratio) * 150);
+}
+.play-area {
+  background-image: url(images/download.jpeg);
+  border-radius: 25%;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+
+.player-hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.player-hand img {
+  width: 150px;
+  height: calc(var(--aspect-ratio) * 150);
+}
+.header {
+  font-family: 'Allan';
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  font: 75px / 1 Allan;
+  text-align: center;
+}
+button {
+  font: 20px / 1 Allan;
+  text-shadow: -1px 0 black, 0 1px black, 0 1px black, -1px 0 black;
+  background-color: blueviolet;
+  color: white;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+.take-away {
+  display: none;
+}
+.buttons {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center
+}
+button.new-game {
+  background-color: crimson;
+  margin: 10% 43% 0 43%;
+  width: 195px;
+  height: 195px;
+}
+.player-score {
+  text-align: center;
+
+}
+.dealer-score {
+  text-align: center;
 }
